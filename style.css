@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbbbbb;
+}
+/*bulles*/
+.photo img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px #777777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.linkedin img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px #777777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.github img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px #777777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.discord img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px #777777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
