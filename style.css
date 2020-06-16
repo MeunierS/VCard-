@@ -6,19 +6,25 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-image: url(image/space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
 }
-header, section {
+header {
     color: blanchedalmond;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbbbbb;
 }
 /*bulles*/
+.cases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
 .photo img{
     width: 200px;
     height: 200px;
@@ -26,6 +32,8 @@ header, section {
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
     margin-top: -80px;
+    grid-column: 2;
+    grid-row: 2;
 }
 .linkedin img{
     width: 100px;
@@ -34,6 +42,8 @@ header, section {
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
     margin-top: -80px;
+    grid-column: 1;
+    grid-row: 1;
 }
 .github img{
     width: 100px;
@@ -42,6 +52,8 @@ header, section {
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
     margin-top: -80px;
+    grid-column: 1;
+    grid-row: 2;
 }
 .discord img{
     width: 100px;
@@ -50,8 +62,6 @@ header, section {
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
     margin-top: -80px;
-}
-nav {
-    display: inline-block;
-    align-self: left;
+    grid-column: 1;
+    grid-row: 3;
 }
