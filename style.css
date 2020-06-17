@@ -11,15 +11,23 @@ a {
 }
 header {
     color: rgb(219, 101, 5);
+    height: 20%;
 }
 nav {
     float: left;
+    width: 10%;
+    text-align: left;
+    height: 70%;
 }
 section {
     float: right;
+    align-items: left;
+    width: 90%;
+    height: 70%;
 }
 footer {
-    float: bottom;
+    clear: both;
+    height: 10%;
 }
 .photo img{
     width: 100px;
