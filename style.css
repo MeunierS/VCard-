@@ -1,7 +1,11 @@
 body {
+    display: block;
+    background-color: #0e1211;
     background-image: url(image/space.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1200px 400px;
+    height: 400px;
+    width: 1200px;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px black;
@@ -9,29 +13,42 @@ body {
 a {
     color: yellow;
 }
-header {
+header {/*Header*/
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1;
+    justify-content: space-evenly;
     color: orange;
-    height: 20%;
 }
-nav {
-    float: left;
-    width: 10%;
-    text-align: left;
-    height: 80%;
-}
-section {
-    float: right;
-    align-items: left;
-    width: 90%;
-    height: 80%;
-    color: orange;
+.photo {
+    grid-row: 1;
+    grid-column: 1;
 }
 .photo img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
     border: 3px solid #ffffff;
     box-shadow: 0px 0px 10px #777777;
-    border-radius: 50%;
+    border-radius: 75%;
+}
+.intro{
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+}
+nav {/*liens*/
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+    justify-content: space-evenly;
+}
+.CV{
+    grid-row: 1;
+    grid-column: 1;
+}
+.linkedin{
+    grid-row: 1;
+    grid-column: 2;
 }
 .linkedin img{
     width: 50px;
@@ -39,6 +56,10 @@ section {
     border: 3px solid #ffffff;
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
+}
+.github{
+    grid-row: 1;
+    grid-column: 3;
 }
 .github img{
     background-color: white;
@@ -48,6 +69,10 @@ section {
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
 }
+.discord{
+    grid-row: 1;
+    grid-column: 4;
+}
 .discord img{
     background-color: white;
     width: 50px;
@@ -55,4 +80,26 @@ section {
     border: 3px solid #ffffff;
     box-shadow: 0px 0px 10px #777777;
     border-radius: 50%;
+}
+/*info contact*/
+section {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 80%;
+    color: orange;
+}
+.contact {
+    grid-row: 1;
+    grid-column: 1;
+}
+.adr {
+    grid-row: 1;
+    grid-column: 2;
+}
+.gsm {
+    grid-row: 1;
+    grid-column: 3;
 }
